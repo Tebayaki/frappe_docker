@@ -49,10 +49,10 @@ services:
     environment:
       - SHELL=/bin/bash
     volumes:
-      - ..:/workspace:cached
+      - bench-data:/home/frappe/frappe-bench
       # Enable if you require git cloning
       # - ${HOME}/.ssh:/home/frappe/.ssh
-    working_dir: /workspace/development
+    working_dir: /home/frappe/frappe-bench
     ports:
       - 8000-8005:8000-8005
       - 9000-9005:9000-9005
@@ -85,5 +85,4 @@ services:
   #   network_mode: "host"
 volumes:
   mariadb-data:
-  #postgresql-data:
-  #mailpit-data:
+  bench-data:
