@@ -3,7 +3,7 @@
 """
 Example:
 build.py --runtime docker \
-    --frappe-path https://github.com/frappe/frappe \
+    --frappe-path https://github.com/Tebayaki/frappe \
     --frappe-branch version-16 \
     --apps-file apps.json \
     --tag frappe_custom:16 \
